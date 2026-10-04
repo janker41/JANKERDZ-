@@ -4,80 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JANKER DZ</title>
+<title>JANKER DZ | Official</title>
 
 <style>
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background:
-        radial-gradient(circle at 50% 0%, #5a4508 0%, #181818 28%, #050505 70%);
-    color: #fff;
+        radial-gradient(circle at top, #3d3008 0%, #151515 35%, #050505 75%);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-/* البطاقة الرئيسية */
 .card {
     width: 100%;
     max-width: 430px;
-    padding: 40px 24px 30px;
+    padding: 35px 25px;
     text-align: center;
-
-    background: linear-gradient(
-        145deg,
-        #111111,
-        #191919,
-        #080808
-    );
-
+    background: linear-gradient(145deg, #151515, #080808);
     border: 2px solid #d4af37;
-    border-radius: 28px;
-
+    border-radius: 25px;
     box-shadow:
-        0 0 15px rgba(212,175,55,0.35),
-        0 0 50px rgba(212,175,55,0.15);
-
+        0 0 25px rgba(212,175,55,0.25),
+        0 0 60px rgba(212,175,55,0.10);
     position: relative;
     overflow: hidden;
 }
 
-/* تأثير ذهبي أعلى البطاقة */
 .card::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 10%;
-    width: 80%;
-    height: 3px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #fff2a6,
-        #d4af37,
-        #fff2a6,
-        transparent
-    );
-}
-
-/* الشعار */
-.logo {
-    width: 110px;
-    height: 110px;
-    margin: 0 auto 20px;
-
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 180px;
+    height: 180px;
     background:
-       
