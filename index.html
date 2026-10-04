@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JANKERDZ</title>
+<title>JANKER DZ</title>
 
 <style>
 * {
@@ -16,141 +16,68 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background:
-        radial-gradient(circle at top, #3a2b08 0%, #111 35%, #050505 100%);
-    color: white;
+        radial-gradient(circle at 50% 0%, #5a4508 0%, #181818 28%, #050505 70%);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
+/* البطاقة الرئيسية */
 .card {
     width: 100%;
     max-width: 430px;
-    padding: 35px 22px;
+    padding: 40px 24px 30px;
     text-align: center;
-    background: rgba(15,15,15,0.94);
-    border: 1px solid #b8943e;
-    border-radius: 25px;
-    box-shadow: 0 0 35px rgba(212,175,55,0.25);
+
+    background: linear-gradient(
+        145deg,
+        #111111,
+        #191919,
+        #080808
+    );
+
+    border: 2px solid #d4af37;
+    border-radius: 28px;
+
+    box-shadow:
+        0 0 15px rgba(212,175,55,0.35),
+        0 0 50px rgba(212,175,55,0.15);
+
+    position: relative;
+    overflow: hidden;
 }
 
+/* تأثير ذهبي أعلى البطاقة */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #fff2a6,
+        #d4af37,
+        #fff2a6,
+        transparent
+    );
+}
+
+/* الشعار */
 .logo {
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 20px;
+
     border-radius: 50%;
-    border: 3px solid #d4af37;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 42px;
-    font-weight: bold;
-    color: #d4af37;
-    box-shadow: 0 0 25px rgba(212,175,55,0.4);
-}
 
-h1 {
-    margin: 20px 0 5px;
-    font-size: 34px;
-    color: #d4af37;
-    letter-spacing: 3px;
-}
-
-.subtitle {
-    color: #ccc;
-    margin-bottom: 28px;
-    font-size: 15px;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.buttons a {
-    text-decoration: none;
-    color: white;
-    padding: 16px;
-    border-radius: 14px;
-    background: linear-gradient(90deg, #151515, #292929);
-    border: 1px solid #6f5a22;
-    font-size: 17px;
-    font-weight: bold;
-    transition: 0.25s;
-}
-
-.buttons a:hover {
-    transform: scale(1.03);
-    border-color: #d4af37;
-    box-shadow: 0 0 18px rgba(212,175,55,0.3);
-}
-
-.tiktok {
-    color: #fff !important;
-}
-
-.telegram {
-    color: #58bdf5 !important;
-}
-
-.facebook {
-    color: #6fa8ff !important;
-}
-
-.footer {
-    margin-top: 28px;
-    color: #777;
-    font-size: 12px;
-}
-
-.gold {
-    color: #d4af37;
-}
-</style>
-</head>
-
-<body>
-
-<div class="card">
-
-    <div class="logo">J</div>
-
-    <h1>JANKERDZ</h1>
-
-    <div class="subtitle">
-        مرحباً بك في الصفحة الرسمية
-    </div>
-
-    <div class="buttons">
-
-        <a class="tiktok"
-           href="https://www.tiktok.com/@jankerdz"
-           target="_blank">
-           🎵 TikTok
-        </a>
-
-        <a class="telegram"
-           href="https://t.me/Algeria41"
-           target="_blank">
-           ✈️ Telegram
-        </a>
-
-        <a class="facebook"
-           href="https://www.facebook.com/share/19idxQ1gS/"
-           target="_blank">
-           📘 Facebook
-        </a>
-
-    </div>
-
-    <div class="footer">
-        جميع الحقوق محفوظة ©
-        <span class="gold">JANKERDZ</span>
-    </div>
-
-</div>
-
-</body>
-</html>
+    background:
+       
